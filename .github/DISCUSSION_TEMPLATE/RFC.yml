@@ -1,4 +1,4 @@
-name: "Bug report"
+name: "RFC"
 body:
 - type: input
   id: dsdsfasdf
