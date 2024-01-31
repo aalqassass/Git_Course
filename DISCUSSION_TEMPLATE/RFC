@@ -1,0 +1,57 @@
+**Type:** ✅ Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc.
+
+**Contributors:** ✅ @mention all contributors associated with the RFC.
+
+## 📖 Description
+
+✅ Provide a clear description of the component or feature and its general functionality.
+
+### ✏️ Additional Notes (Optional)
+
+✅ All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
+
+## ✍️ Requirements
+
+-   ✅ Clearly define the problem or need that the RFC aims to address.
+-   ✅ Ensure that the problem aligns with project goals and objectives.
+-   ✅ Provide detailed design considerations for React components or features.
+-   ✅ Consider usability, accessibility, and responsiveness in the design.
+
+### ♿️ Accessibility
+
+-   ✅ Ensure that the React components or features adhere to accessibility standards.
+-   ✅ Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
+-   ✅ Ask the Accessibility Team (@gemini_accessibility) to get their advice.
+
+## 🎯 Proposal
+
+### 👪 Component Relation (Optional)
+
+-   ✅ Specify the React component's children relationship by adding a [Mermaid Diagram](https://mermaid.js.org/config/accessibility.html?#class-diagram).
+-   ✅ Consider the reusability and maintainability aspects of React components.
+
+### 👨🏻‍💻 Types & Usage
+
+-   ✅ Determine the approach for types and state management (e.g., local state, Context API).
+-   ✅ Consider how state changes will be handled and communicated.
+-   ✅ Provide a rudimentary example of how your feature would be used.
+
+```tsx
+type ComponentProps = {};
+
+const App = () => <Component />;
+```
+
+## ❓ Clarifications (Optional)
+
+✅ Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
+
+## 🔗 Related Links
+
+✅ Add all relevant links such as:
+
+-   ✅ Jira ticket
+-   ✅ Figma design
+-   ✅ [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
+-   ✅ Research links
+-   ✅ Related Pull Requests
