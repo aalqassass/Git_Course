@@ -17,6 +17,20 @@ body:
               - Release cadence
       validations:
           required: true
+    - type: input
+      id: Contributors
+      attributes:
+          label: Contributors
+          description:  @mention all contributors associated with the RFC.
+      validations:
+          required: true
+    - type: input
+      id: Additional_Notes
+      attributes:
+          label: ContribuAdditional Notestors
+          description:  All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
+      validations:
+          required: false
     - type: textarea
       id: improvements
       attributes:
@@ -35,13 +49,6 @@ body:
           value: |
               ## Markdown header
               And some more markdown
-    - type: input
-      id: has-id
-      attributes:
-          label: Suggestions
-          description: A description about suggestions to help you
-      validations:
-          required: true
     - type: checkboxes
       attributes:
           label: Check that box!
