@@ -6,7 +6,7 @@ body:
       value: |
               This template and checklist are a comprehensive guide to ensure that developers cover all relevant aspects when creating or reviewing RFCs.
   - type: dropdown
-      id: Type
+      id: RFC_Type
       attributes:
           label: Type
           options:
