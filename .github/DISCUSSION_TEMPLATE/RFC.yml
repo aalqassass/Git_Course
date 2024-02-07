@@ -1,11 +1,11 @@
 title: '[RFC] '
 labels: ['RFC Template']
 body:
-    - type: markdown
-      attributes:
-          value: |
+  - type: markdown
+    attributes:
+      value: |
               This template and checklist are a comprehensive guide to ensure that developers cover all relevant aspects when creating or reviewing RFCs.
-    - type: dropdown
+  - type: dropdown
       id: download
       attributes:
           label: Type
@@ -18,14 +18,14 @@ body:
         description: Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc
         validations:
           required: true
-    - type: input
+  - type: input
       id: Contributors
       attributes:
           label: Contributors
           description: mention all contributors associated with the RFC.
       validations:
           required: true
-    - type: textarea
+  - type: textarea
       id: Additional_Notes
       attributes:
           label: Additional Notestors
@@ -38,19 +38,19 @@ body:
           render: bash
       validations:
           required: false
-    - type: markdown
+  - type: markdown
       attributes:
           value: |
               ## Markdown header
               And some more markdown
-    - type: checkboxes
+  - type: checkboxes
       attributes:
           label: Check that box!
           options:
               - label: This one!
                 required: true
               - label: I won't stop you if you check this one, too
-    - type: markdown
+  - type: markdown
       attributes:
           value: |
               ### The thrilling conclusion
