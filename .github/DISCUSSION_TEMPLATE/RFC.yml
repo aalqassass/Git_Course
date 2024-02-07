@@ -41,8 +41,6 @@ body:
           description: A description about suggestions to help you
       validations:
           required: true
-    - type: dropdown
-      id: download
     - type: checkboxes
       attributes:
           label: Check that box!
