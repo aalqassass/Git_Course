@@ -28,7 +28,7 @@ body:
       id: Additional_Notes
       attributes:
           label: ContribuAdditional Notestors
-          description:  All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
+          description:  All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned.
       validations:
           required: false
     - type: textarea
