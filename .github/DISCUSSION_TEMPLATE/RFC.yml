@@ -3,7 +3,8 @@ labels: ['RFC Template']
 body:
     - type: markdown
       attributes:
-          value: This template and checklist are a comprehensive guide to ensure that developers cover all relevant aspects when creating or reviewing RFCs.
+          value: |
+              This template and checklist are a comprehensive guide to ensure that developers cover all relevant aspects when creating or reviewing RFCs.
     - type: dropdown
       id: download
       attributes:
@@ -15,7 +16,7 @@ body:
               - Bug fix time
               - Release cadence
         description: Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc
-      validations:
+        validations:
           required: true
     - type: input
       id: Contributors
