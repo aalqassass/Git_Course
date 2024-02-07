@@ -10,6 +10,7 @@ body:
       attributes:
           label: Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc
           options:
+              -
               - Core hooks
               - Core API
               - Bug fix time
