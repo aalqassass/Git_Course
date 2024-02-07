@@ -16,7 +16,7 @@ body:
               - Bug fix time
               - Release cadence
           description: Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc
-      validations:
+          validations:
           required: true
     - type: input
       id: Contributors
