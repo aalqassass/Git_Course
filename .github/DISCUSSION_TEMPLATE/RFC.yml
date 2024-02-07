@@ -21,21 +21,14 @@ body:
       id: Contributors
       attributes:
           label: Contributors
-          description:  mention all contributors associated with the RFC.
+          description:  @mention all contributors associated with the RFC.
       validations:
           required: true
-    - type: input
+    - type: textarea
       id: Additional_Notes
       attributes:
           label: ContribuAdditional Notestors
-          description:  All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned.
-      validations:
-          required: false
-    - type: textarea
-      id: improvements
-      attributes:
-          label: Top 3 improvements
-          description: 'What are the top 3 improvements we could make to this project?'
+          description: 'All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).'
           value: |
               1.
               2.
@@ -43,7 +36,7 @@ body:
               ...
           render: bash
       validations:
-          required: true
+          required: false
     - type: markdown
       attributes:
           value: |
