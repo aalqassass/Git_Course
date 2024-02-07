@@ -1,55 +1,66 @@
-title: '[General] '
-labels: ['General Introduction']
+title: '[RFC] '
+labels: ['RFC Template']
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This is text that will show up in the template!
-  - type: textarea
-    id: improvements
-    attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
-    validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
-    validations:
-      required: true
-  - type: dropdown
-    id: download
-    attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
-    validations:
-      required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
+    - type: markdown
+      attributes:
+          value: |
+              This template and checklist are a comprehensive guide to ensure that developers cover all relevant aspects when creating or reviewing RFCs.
+    - type: dropdown
+      id: download
+      attributes:
+          label: Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc
+          options:
+              - Core hooks
+              - Core API
+              - Bug fix time
+              - Release cadence
+      validations:
           required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_
+    - type: textarea
+      id: improvements
+      attributes:
+          label: Top 3 improvements
+          description: 'What are the top 3 improvements we could make to this project?'
+          value: |
+              1.
+              2.
+              3.
+              ...
+          render: bash
+      validations:
+          required: true
+    - type: markdown
+      attributes:
+          value: |
+              ## Markdown header
+              And some more markdown
+    - type: input
+      id: has-id
+      attributes:
+          label: Suggestions
+          description: A description about suggestions to help you
+      validations:
+          required: true
+    - type: dropdown
+      id: download
+      attributes:
+          label: Which area of this project could be most improved?
+          options:
+              - Documentation
+              - Pull request review time
+              - Bug fix time
+              - Release cadence
+      validations:
+          required: true
+    - type: checkboxes
+      attributes:
+          label: Check that box!
+          options:
+              - label: This one!
+                required: true
+              - label: I won't stop you if you check this one, too
+    - type: markdown
+      attributes:
+          value: |
+              ### The thrilling conclusion
+              _to our template_
