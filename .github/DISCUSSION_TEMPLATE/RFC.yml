@@ -2,58 +2,58 @@
 title: '[RFC] '
 labels: ['RFC Template']
 body:
-  - type: markdown
-    attributes:
-      value: |
+    - type: markdown
+      attributes:
+          value: |
               This template and checklist are a comprehensive guide to ensure that developers cover all relevant aspects when creating or reviewing RFCs.
-  - type: dropdown
-    id: RFC_Type
-    attributes:
-      label: Type
-      options:
-        - null
-        - Core hooks
-        - Core API
-        - Bug fix time
-        - Release cadence
-      description: Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc
-      validations: null
-      required: true
-  - type: input
-    id: Contributors
-    attributes:
-      label: Contributors
-      description: mention all contributors associated with the RFC.
-      validations:
-        required: true
-  - type: textarea
-    id: Additional_Notes
-    attributes:
-      label: Additional Notestors
-      description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
-      value: |
+    - type: dropdown
+      id: RFC_Type
+      attributes:
+          label: Type
+          options:
+              - null
+              - Core hooks
+              - Core API
+              - Bug fix time
+              - Release cadence
+          description: Specify the target type of the RFC, e.g. Core hooks, Core API, UI component, Tool, etc
+          validations: null
+          required: true
+    - type: input
+      id: Contributors
+      attributes:
+          label: Contributors
+          description: mention all contributors associated with the RFC.
+          validations:
+              required: true
+    - type: textarea
+      id: Additional_Notes
+      attributes:
+          label: Additional Notestors
+          description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
+          value: |
               1.
               2.
               3.
               ...
-    render: bash
-    validations:
-      required: false
-  - type: markdown
-    attributes:
-      value: |
+      render: bash
+      validations:
+          required: false
+    - type: markdown
+      attributes:
+          value: |
               ## Markdown header
               And some more markdown
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-    required: true
-  - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-                      ### The thrilling conclusion
-_to our template_
+    - type: checkboxes
+      attributes:
+          label: Check that box!
+          options:
+              - label: This one!
+      required: true
+    - label: I won't stop you if you check this one, too
+    - type: markdown
+      attributes:
+          value:
+              ''
+              ### The thrilling conclusion
+              ### The thrilling conclusion
