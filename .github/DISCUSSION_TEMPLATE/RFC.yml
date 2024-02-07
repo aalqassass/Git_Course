@@ -1,5 +1,5 @@
-titldde: '[General] '
-labeldds: ['General Introduction']
+title: '[General] '
+label: ['General Introduction']
 body:
   - type: markdown
     attributes:
