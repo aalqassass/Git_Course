@@ -21,7 +21,7 @@ body:
       id: Contributors
       attributes:
           label: Contributors
-          description:  @mention all contributors associated with the RFC.
+          description: mention all contributors associated with the RFC.
       validations:
           required: true
     - type: textarea
