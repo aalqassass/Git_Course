@@ -47,6 +47,14 @@ body:
           render: bash
       validations:
           required: false
+    - type: checkboxes
+      attributes:
+          label: Requirements
+          options:
+              - label: Clearly define the problem or need that the RFC aims to address.
+              - label: Ensure that the problem aligns with project goals and objectives.
+              - label: Provide detailed design considerations for React components or features.
+              - label: Consider usability, accessibility, and responsiveness in the design.
     - type: markdown
       attributes:
           value: |
