@@ -14,8 +14,15 @@ body:
               - Tool
       validations:
           required: true
-    - type: textarea
+    - type: input
       id: Contributors
+      attributes:
+          label: Contributors
+          description: mention all contributors associated with the RFC.
+      validations:
+          required: true
+    - type: textarea
+      id: ContributorsX
       attributes:
           label: Contributors
           description: mention all contributors associated with the RFC.
