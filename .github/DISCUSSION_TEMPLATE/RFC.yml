@@ -1,10 +1,19 @@
 ---
 labels: ['rfc: draft']
 body:
-    - type: markdown
+    - type: dropdown
+      id: RFC_Type
       attributes:
-          value: |
-              This is text that will show up in the template!
+          label: RFC TYpe
+          description: Specify the target type of the RFC
+          options:
+              -
+              - Core hooks
+              - Core API
+              - UI component
+              - Tool
+      validations:
+          required: true
     - type: textarea
       id: improvements
       attributes:
