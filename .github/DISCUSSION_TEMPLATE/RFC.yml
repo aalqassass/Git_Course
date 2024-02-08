@@ -1,5 +1,6 @@
 ---
-labels: ['rfc: draft']
+title: '[RFC] '
+labels: ['draft']
 body:
     - type: dropdown
       id: RFC_Type
@@ -7,7 +8,6 @@ body:
           label: RFC TYpe
           description: Specify the target type of the RFC
           options:
-              -
               - Core hooks
               - Core API
               - UI component
