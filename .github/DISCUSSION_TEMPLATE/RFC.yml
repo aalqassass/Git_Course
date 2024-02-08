@@ -22,10 +22,15 @@ body:
       validations:
           required: true
     - type: textarea
-      id: ContributorsX
+      id: Description
       attributes:
-          label: Contributors
-          description: mention all contributors associated with the RFC.
+          label: Description
+          description: Provide a clear description of the component or feature and its general functionality.
+          value: |
+              1.
+              2.
+              3.
+              ...
           render: bash
       validations:
           required: true
