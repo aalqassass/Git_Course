@@ -24,7 +24,7 @@ body:
     - type: textarea
       id: Description
       attributes:
-          label: Description
+          label: 📖 Description
           description: Provide a clear description of the component or feature and its general functionality.
           value: |
               1.
@@ -37,7 +37,7 @@ body:
     - type: textarea
       id: Additional_Notes
       attributes:
-          label: Additional Notes
+          label: ✏️ Additional Notes
           description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
           value: |
               1.
@@ -49,7 +49,7 @@ body:
           required: false
     - type: checkboxes
       attributes:
-          label: Requirements
+          label: ✍️ Requirements
           options:
               - label: Clearly define the problem or need that the RFC aims to address.
               - label: Ensure that the problem aligns with project goals and objectives.
@@ -57,7 +57,7 @@ body:
               - label: Consider usability, accessibility, and responsiveness in the design.
     - type: checkboxes
       attributes:
-          label: Accessibility
+          label: ♿️ Accessibility
           options:
               - label: nsure that the React components or features adhere to accessibility standards.
               - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
@@ -68,17 +68,32 @@ body:
               ## 🎯Proposal
     - type: checkboxes
       attributes:
-          label: Component Relation (Optional)
+          label: 👪 Component Relation (Optional)
           options:
               - label: Specify the React component's children relationship by adding a [Mermaid Diagram](https://mermaid.js.org/config/accessibility.html?#class-diagram).
               - label: Consider the reusability and maintainability aspects of React components.
     - type: checkboxes
       attributes:
-          label: Types & Usage
+          label: 👨🏻‍💻 Types & Usage
           options:
               - label: Determine the approach for types and state management (e.g., local state, Context API).
               - label: Consider how state changes will be handled and communicated.
               - label: Provide a rudimentary example of how your feature would be used.
+    - type: checkboxes
+      attributes:
+          label: ❓ Clarifications (Optional)
+          options:
+              - label: Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
+
+    - type: checkboxes
+      attributes:
+          label: 🔗 Related Links, add all relevant links such as
+          options:
+              - label: Jira ticket
+              - label: Figma design
+              - label: [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
+              - label: Research links
+              - label: Related Pull Requests
 
     - type: markdown
       attributes:
