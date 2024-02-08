@@ -91,41 +91,14 @@ body:
           options:
               - label: Jira ticket
               - label: Figma design
-              - label: [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/)
+              - label: add [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
               - label: Research links
               - label: Related Pull Requests
 
     - type: markdown
       attributes:
           value: |
-              ## Markdown header
-              And some more markdown
-    - type: input
-      id: has-id
-      attributes:
-          label: Suggestions
-          description: A description about suggestions to help you
-      validations:
-          required: true
-    - type: dropdown
-      id: download
-      attributes:
-          label: Which area of this project could be most improved?
-          options:
-              - Documentation
-              - Pull request review time
-              - Bug fix time
-              - Release cadence
-      validations:
-          required: true
-    - type: checkboxes
-      attributes:
-          label: Check that box!
-          options:
-              - label: This one!
-                required: true
-              - label: I won't stop you if you check this one, too
-    - type: markdown
-      attributes:
-          value: |
-              ### The thrilling conclusion
+              ### Examples
+              -   [RFC to add the `ActionMenu` component](https://github.com/axel-springer-kugawana/gemini/discussions/465)
+              -   [RFC to add the `Carousel` component](https://github.com/axel-springer-kugawana/gemini/discussions/562)
+              -   [RFC to add the `ToggleButton` component](https://github.com/axel-springer-kugawana/gemini/discussions/583)
