@@ -15,15 +15,10 @@ body:
       validations:
           required: true
     - type: textarea
-      id: improvements
+      id: Contributors
       attributes:
-          label: Top 3 improvements
-          description: What are the top 3 improvements we could make to this project?
-          value: |
-              1.
-              2.
-              3.
-              ...
+          label: Contributors
+          description: mention all contributors associated with the RFC.
           render: bash
       validations:
           required: true
