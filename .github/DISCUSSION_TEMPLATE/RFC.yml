@@ -1,105 +1,126 @@
-title: 'RFC'
-labels: ['draft']
+title: RFC
+labels:
+  - draft
 body:
-    - type: dropdown
-      id: RFC_Type
-      attributes:
-          label: RFC TYpe
-          description: Specify the target type of the RFC
-          options:
-              - Core hooks
-              - Core API
-              - UI component
-              - Tool
-      validations:
+  - type: dropdown
+    id: RFC_Type
+    attributes:
+      label: RFC TYpe
+      description: Specify the target type of the RFC
+      options:
+        - Core hooks
+        - Core API
+        - UI component
+        - Tool
+    validations:
+      required: true
+  - type: input
+    id: Contributors
+    attributes:
+      label: Contributors
+      description: mention all contributors associated with the RFC.
+    validations:
+      required: true
+  - type: textarea
+    id: Description
+    attributes:
+      label: Description
+      description: >-
+        Provide a clear description of the component or feature and its general
+        functionality.
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: Additional_Notes
+    attributes:
+      label: Additional Notes
+      description: >-
+        All notes that help other contributors understand the reasons for
+        adding, deleting, or changing a specific feature should be mentioned
+        (like [Gemini Decision
+        Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Requirements
+      options:
+        - label: Clearly define the problem or need that the RFC aims to address.
+        - label: Ensure that the problem aligns with project goals and objectives.
+        - label: >-
+            Provide detailed design considerations for React components or
+            features.
+        - label: 'Consider usability, accessibility, and responsiveness in the design.'
+  - type: checkboxes
+    attributes:
+      label: Accessibility
+      options:
+        - label: >-
+            nsure that the React components or features adhere to accessibility
+            standards.
+        - label: >-
+            Research any pre-existing patterns and document the findings (e.g.
+            https://www.w3.org/WAI/ARIA/apg/patterns/).
+        - label: >-
+            Ask the Accessibility Team (@gemini_accessibility) to get their
+            advice.DD
+  - type: checkboxes
+    attributes:
+      label: Proposal
+      options:
+        - label: >-
+            nsure that the React components or features adhere to accessibility
+            standards.
+        - label: >-
+            Research any pre-existing patterns and document the findings (e.g.
+            https://www.w3.org/WAI/ARIA/apg/patterns/).
+        - label: >-
+            Ask the Accessibility Team (@gemini_accessibility) to get their
+            advice.DD
+  - type: markdown
+  - type: markdown
+    attributes:
+      value: |
+        ## Markdown header
+        And some more markdown
+  - type: input
+    id: has-id
+    attributes:
+      label: Suggestions
+      description: A description about suggestions to help you
+    validations:
+      required: true
+  - type: dropdown
+    id: download
+    attributes:
+      label: Which area of this project could be most improved?
+      options:
+        - Documentation
+        - Pull request review time
+        - Bug fix time
+        - Release cadence
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Check that box!
+      options:
+        - label: This one!
           required: true
-    - type: input
-      id: Contributors
-      attributes:
-          label: Contributors
-          description: mention all contributors associated with the RFC.
-      validations:
-          required: true
-    - type: textarea
-      id: Description
-      attributes:
-          label: Description
-          description: Provide a clear description of the component or feature and its general functionality.
-          value: |
-              1.
-              2.
-              3.
-              ...
-          render: bash
-      validations:
-          required: true
-    - type: textarea
-      id: Additional_Notes
-      attributes:
-          label: Additional Notes
-          description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
-          value: |
-              1.
-              2.
-              3.
-              ...
-          render: bash
-      validations:
-          required: false
-    - type: checkboxes
-      attributes:
-          label: Requirements
-          options:
-              - label: Clearly define the problem or need that the RFC aims to address.
-              - label: Ensure that the problem aligns with project goals and objectives.
-              - label: Provide detailed design considerations for React components or features.
-              - label: Consider usability, accessibility, and responsiveness in the design.
-    - type: checkboxes
-      attributes:
-          label: Accessibility
-          options:
-              - label: nsure that the React components or features adhere to accessibility standards.
-              - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
-              - label: Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
-    - type: checkboxes
-      attributes:
-          label: Proposal
-          options:
-              - label: nsure that the React components or features adhere to accessibility standards.
-              - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
-              - label: Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
-    - type: markdown
-    - type: markdown
-      attributes:
-          value: |
-              ## Markdown header
-              And some more markdown
-    - type: input
-      id: has-id
-      attributes:
-          label: Suggestions
-          description: A description about suggestions to help you
-      validations:
-          required: true
-    - type: dropdown
-      id: download
-      attributes:
-          label: Which area of this project could be most improved?
-          options:
-              - Documentation
-              - Pull request review time
-              - Bug fix time
-              - Release cadence
-      validations:
-          required: true
-    - type: checkboxes
-      attributes:
-          label: Check that box!
-          options:
-              - label: This one!
-                required: true
-              - label: I won't stop you if you check this one, too
-    - type: markdown
-      attributes:
-          value: |
-              ### The thrilling conclusion
+        - label: 'I won''t stop you if you check this one, too'
+  - type: markdown
+    attributes:
+      value: |
+        ### The thrilling conclusion
