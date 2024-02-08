@@ -62,13 +62,24 @@ body:
               - label: nsure that the React components or features adhere to accessibility standards.
               - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
               - label: Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
+    - type: markdown
+      attributes:
+          value: |
+              ### Proposal
     - type: checkboxes
       attributes:
-          label: Proposal
+          label: Component Relation (Optional)
           options:
-              - label: nsure that the React components or features adhere to accessibility standards.
-              - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
-              - label: Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
+              - label: Specify the React component's children relationship by adding a [Mermaid Diagram](https://mermaid.js.org/config/accessibility.html?#class-diagram).
+              - label: Consider the reusability and maintainability aspects of React components.
+    - type: checkboxes
+      attributes:
+          label: Types & Usage
+          options:
+              - label: Determine the approach for types and state management (e.g., local state, Context API).
+              - label: Consider how state changes will be handled and communicated.
+              - label: Provide a rudimentary example of how your feature would be used.
+
     - type: markdown
       attributes:
           value: |
