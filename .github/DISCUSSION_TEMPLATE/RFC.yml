@@ -83,6 +83,7 @@ body:
               - label: Determine the approach for types and state management (e.g., local state, Context API).
               - label: Consider how state changes will be handled and communicated.
               - label: Provide a rudimentary example of how your feature would be used.
+
     - type: checkboxes
       attributes:
           label: ❓ Clarifications (Optional)
