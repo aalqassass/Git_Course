@@ -63,7 +63,6 @@ body:
               - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
               - label: Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
     - type: checkboxes
-      ### Heading level 3
       attributes:
           label: Proposal
           options:
