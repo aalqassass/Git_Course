@@ -34,6 +34,7 @@ body:
           render: bash
       validations:
           required: true
+
     - type: textarea
       id: Additional_Notes
       attributes:
@@ -47,6 +48,7 @@ body:
           render: bash
       validations:
           required: false
+
     - type: checkboxes
       attributes:
           label: ✍️ Requirements
@@ -55,6 +57,7 @@ body:
               - label: Ensure that the problem aligns with project goals and objectives.
               - label: Provide detailed design considerations for React components or features.
               - label: Consider usability, accessibility, and responsiveness in the design.
+
     - type: checkboxes
       attributes:
           label: ♿️ Accessibility
@@ -62,6 +65,7 @@ body:
               - label: nsure that the React components or features adhere to accessibility standards.
               - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
               - label: Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
+
     - type: markdown
       attributes:
           value: |
