@@ -91,7 +91,7 @@ body:
           options:
               - label: Jira ticket
               - label: Figma design
-              - label: [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
+              - label: [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/)
               - label: Research links
               - label: Related Pull Requests
 
