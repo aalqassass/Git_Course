@@ -53,10 +53,9 @@ body:
       attributes:
           label: ♿️ Accessibility
           description: |                  
-          options:
-              - label: nsure that the React components or features adhere to accessibility standards.
-              - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
-              - label: Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
+                      - nsure that the React components or features adhere to accessibility standards.
+                      - Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
+                      - Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
 
     - type: markdown
       attributes:
@@ -64,16 +63,17 @@ body:
               ## 🎯Proposal
     - type: textarea
       attributes:
+          id: Component_Relation
           label: 👪 Component Relation (Optional)
           description: Specify the React component's children relationship by adding a [Mermaid Diagram](https://mermaid.js.org/config/accessibility.html?#class-diagram) and Consider the reusability and maintainability aspects of React components.
-    - type: checkboxes
+    - type: textarea
       attributes:
+          id: Types_Usage
           label: 👨🏻‍💻 Types & Usage
-          options:
-              - label: Determine the approach for types and state management (e.g., local state, Context API).
-              - label: Consider how state changes will be handled and communicated.
-              - label: Provide a rudimentary example of how your feature would be used.
-
+          description: |
+                        - Determine the approach for types and state management (e.g., local state, Context API).
+                        - Consider how state changes will be handled and communicated.
+                        - Provide a rudimentary example of how your feature would be used.
     - type: textarea
       id: Clarifications
       attributes:
@@ -81,12 +81,13 @@ body:
           description: Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
       validations:
           required: false
-    - type: checkboxes
+    - type: textarea
       attributes:
-          label: 🔗 Related Links, add all relevant links such as
-          options:
-              - label: Jira ticket
-              - label: Figma design
-              - label: add [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
-              - label: Research links
-              - label: Related Pull Requests
+          id: Related_Links 
+          label: 🔗 Related Links
+          description: add all relevant links
+          value : |
+                   - Figma design
+                   - [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
+                   - Research links
+                   - Related Pull Requests
