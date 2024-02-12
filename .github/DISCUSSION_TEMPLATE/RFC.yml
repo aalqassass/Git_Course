@@ -27,11 +27,6 @@ body:
       attributes:
           label: 📖 Description
           description: Provide a clear description of the component or feature and its general functionality.
-          value: |
-              1.
-              2.
-              3.
-              ...
       validations:
           required: true
 
@@ -44,6 +39,7 @@ body:
           required: false
 
     - type: textarea
+      id: Requirements
       attributes:
           label: ✍️ Requirements
           description: |
@@ -52,9 +48,11 @@ body:
                       - Ensure that the problem aligns with project goals and objectives. 
                       - Provide detailed design considerations for React components or features.
                       - Consider usability, accessibility, and responsiveness in the design.
-    - type: checkboxes
+    - type: textarea
+      id: Accessibility
       attributes:
           label: ♿️ Accessibility
+          description: |                  
           options:
               - label: nsure that the React components or features adhere to accessibility standards.
               - label: Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
@@ -68,11 +66,6 @@ body:
       attributes:
           label: 👪 Component Relation (Optional)
           description: Specify the React component's children relationship by adding a [Mermaid Diagram](https://mermaid.js.org/config/accessibility.html?#class-diagram) and Consider the reusability and maintainability aspects of React components.
-          value: |
-              1.
-              2.
-              3.
-              ...
     - type: checkboxes
       attributes:
           label: 👨🏻‍💻 Types & Usage
@@ -86,11 +79,6 @@ body:
       attributes:
           label: ❓ Clarifications (Optional)
           description: Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
-          value: |
-              1.
-              2.
-              3.
-              ...
       validations:
           required: false
     - type: checkboxes
