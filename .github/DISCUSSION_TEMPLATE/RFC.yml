@@ -46,11 +46,12 @@ body:
     - type: textarea
       attributes:
           label: ✍️ Requirements
-          description: Clearly define the problem or need that the RFC aims to address.|
-                       Clearly define the problem or need that the RFC aims to address.|
-                       Ensure that the problem aligns with project goals and objectives. |
-                       Provide detailed design considerations for React components or features.|
-                       Consider usability, accessibility, and responsiveness in the design.
+          description: |
+                      - Clearly define the problem or need that the RFC aims to address.
+                      - Clearly define the problem or need that the RFC aims to address.
+                      - Ensure that the problem aligns with project goals and objectives. 
+                      - Provide detailed design considerations for React components or features.
+                      - Consider usability, accessibility, and responsiveness in the design.
     - type: checkboxes
       attributes:
           label: ♿️ Accessibility
