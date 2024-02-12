@@ -29,15 +29,11 @@ body:
           description: Provide a clear description of the component or feature and its general functionality.
       validations:
           required: true
-
     - type: textarea
       id: Additional_Notes
       attributes:
-          label: ✏️ Additional Notes
+          label: ✏️ Additional Notes (Optional)
           description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
-      validations:
-          required: false
-
     - type: textarea
       id: Requirements
       attributes:
@@ -48,15 +44,18 @@ body:
                       - Ensure that the problem aligns with project goals and objectives. 
                       - Provide detailed design considerations for React components or features.
                       - Consider usability, accessibility, and responsiveness in the design.
+          validations:
+            required: true
     - type: textarea
       id: Accessibility
       attributes:
           label: ♿️ Accessibility
           description: |                  
-                      - nsure that the React components or features adhere to accessibility standards.
+                      - Ensure that the React components or features adhere to accessibility standards.
                       - Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
-                      - Ask the Accessibility Team (@gemini_accessibility) to get their advice.DD
-
+                      - Ask the Accessibility Team (@gemini_accessibility) to get their advice.
+          validations:
+            required: true
     - type: markdown
       attributes:
           value: |
@@ -74,20 +73,22 @@ body:
                         - Determine the approach for types and state management (e.g., local state, Context API).
                         - Consider how state changes will be handled and communicated.
                         - Provide a rudimentary example of how your feature would be used.
+      validations:
+          required: true
     - type: textarea
       id: Clarifications
       attributes:
           label: ❓ Clarifications (Optional)
           description: Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
-      validations:
-          required: false
     - type: textarea
       attributes:
           id: Related_Links 
           label: 🔗 Related Links
           description: |
-                         add all relevant links such:
+                        add all relevant links such:
                          - Figma design
                          - [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
                          - Research links
                          - Related Pull Requests
+          validations:
+            required: true
