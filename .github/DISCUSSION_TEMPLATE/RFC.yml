@@ -44,8 +44,8 @@ body:
                       - Ensure that the problem aligns with project goals and objectives. 
                       - Provide detailed design considerations for React components or features.
                       - Consider usability, accessibility, and responsiveness in the design.
-          validations:
-            required: true
+      validations:
+        required: true
     - type: textarea
       id: Accessibility
       attributes:
@@ -91,4 +91,4 @@ body:
                          - Research links
                          - Related Pull Requests
       validations:
-       required: true
+        required: true
