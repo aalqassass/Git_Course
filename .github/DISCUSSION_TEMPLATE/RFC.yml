@@ -1,24 +1,25 @@
 ---
 title: 'RFC'
-labels: ['draft']
+labels: ['rfc: draft']
 body:
     - type: dropdown
       id: RFC_Type
       attributes:
-          label: RFC TYpe
+          label: RFC Type
           description: Specify the target type of the RFC
           options:
               - Core hooks
               - Core API
               - UI component
               - Tool
+              - Other
       validations:
           required: true
-    - type: input
+    - type: textarea
       id: Contributors
       attributes:
           label: Contributors
-          description: mention all contributors associated with the RFC.
+          description: Mention all contributors associated with the RFC.
       validations:
           required: true
     - type: textarea
@@ -31,7 +32,6 @@ body:
               2.
               3.
               ...
-          render: bash
       validations:
           required: true
 
@@ -40,24 +40,13 @@ body:
       attributes:
           label: ✏️ Additional Notes
           description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
-          value: |
-              1.
-              2.
-              3.
-              ...
-          render: bash
       validations:
           required: false
 
-    - type: checkboxes
+    - type: textarea
       attributes:
           label: ✍️ Requirements
-          options:
-              - label: Clearly define the problem or need that the RFC aims to address.
-              - label: Ensure that the problem aligns with project goals and objectives.
-              - label: Provide detailed design considerations for React components or features.
-              - label: Consider usability, accessibility, and responsiveness in the design.
-
+          description: Clearly define the problem or need that the RFC aims to address. Clearly define the problem or need that the RFC aims to address.Ensure that the problem aligns with project goals and objectives. Provide detailed design considerations for React components or features. Consider usability, accessibility, and responsiveness in the design.
     - type: checkboxes
       attributes:
           label: ♿️ Accessibility
@@ -70,12 +59,15 @@ body:
       attributes:
           value: |
               ## 🎯Proposal
-    - type: checkboxes
+    - type: textarea
       attributes:
           label: 👪 Component Relation (Optional)
-          options:
-              - label: Specify the React component's children relationship by adding a [Mermaid Diagram](https://mermaid.js.org/config/accessibility.html?#class-diagram).
-              - label: Consider the reusability and maintainability aspects of React components.
+          description: Specify the React component's children relationship by adding a [Mermaid Diagram](https://mermaid.js.org/config/accessibility.html?#class-diagram) and Consider the reusability and maintainability aspects of React components.
+          value: |
+              1.
+              2.
+              3.
+              ...
     - type: checkboxes
       attributes:
           label: 👨🏻‍💻 Types & Usage
@@ -84,12 +76,18 @@ body:
               - label: Consider how state changes will be handled and communicated.
               - label: Provide a rudimentary example of how your feature would be used.
 
-    - type: checkboxes
+    - type: textarea
+      id: Clarifications
       attributes:
           label: ❓ Clarifications (Optional)
-          options:
-              - label: Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
-
+          description: Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
+          value: |
+              1.
+              2.
+              3.
+              ...
+      validations:
+          required: false
     - type: checkboxes
       attributes:
           label: 🔗 Related Links, add all relevant links such as
@@ -99,11 +97,3 @@ body:
               - label: add [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
               - label: Research links
               - label: Related Pull Requests
-
-    - type: markdown
-      attributes:
-          value: |
-              ### Examples
-              -   [RFC to add the `ActionMenu` component](https://github.com/axel-springer-kugawana/gemini/discussions/465)
-              -   [RFC to add the `Carousel` component](https://github.com/axel-springer-kugawana/gemini/discussions/562)
-              -   [RFC to add the `ToggleButton` component](https://github.com/axel-springer-kugawana/gemini/discussions/583)
