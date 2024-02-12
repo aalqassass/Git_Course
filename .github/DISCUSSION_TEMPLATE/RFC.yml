@@ -85,9 +85,9 @@ body:
       attributes:
           id: Related_Links 
           label: 🔗 Related Links
-          description: add all relevant links
-          value : |
-                   - Figma design
-                   - [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
-                   - Research links
-                   - Related Pull Requests
+          description: |
+                         add all relevant links such:
+                         - Figma design
+                         - [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
+                         - Research links
+                         - Related Pull Requests
