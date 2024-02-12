@@ -54,7 +54,7 @@ body:
                       - Ensure that the React components or features adhere to accessibility standards.
                       - Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
                       - Ask the Accessibility Team (@gemini_accessibility) to get their advice.
-          validations:
+      validations:
             required: true
     - type: markdown
       attributes:
@@ -90,5 +90,5 @@ body:
                          - [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
                          - Research links
                          - Related Pull Requests
-          validations:
-            required: true
+      validations:
+       required: true
