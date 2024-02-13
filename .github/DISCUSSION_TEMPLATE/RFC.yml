@@ -32,30 +32,30 @@ body:
     - type: textarea
       id: Additional_Notes
       attributes:
-          label: "### Additional Notes (Optional) "
+          label: ✏️ Additional Notes (Optional)
           description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
     - type: textarea
       id: Requirements
       attributes:
           label: ✍️ Requirements
           description: |
-                      - Clearly define the problem or need that the RFC aims to address.
-                      - Clearly define the problem or need that the RFC aims to address.
-                      - Ensure that the problem aligns with project goals and objectives. 
-                      - Provide detailed design considerations for React components or features.
-                      - Consider usability, accessibility, and responsiveness in the design.
+              - Clearly define the problem or need that the RFC aims to address.
+              - Clearly define the problem or need that the RFC aims to address.
+              - Ensure that the problem aligns with project goals and objectives. 
+              - Provide detailed design considerations for React components or features.
+              - Consider usability, accessibility, and responsiveness in the design.
       validations:
-        required: true
+          required: true
     - type: textarea
       id: Accessibility
       attributes:
           label: ♿️ Accessibility
-          description: |                  
-                      - Ensure that the React components or features adhere to accessibility standards.
-                      - Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
-                      - Ask the Accessibility Team (@gemini_accessibility) to get their advice.
+          description: |
+              - Ensure that the React components or features adhere to accessibility standards.
+              - Research any pre-existing patterns and document the findings (e.g. https://www.w3.org/WAI/ARIA/apg/patterns/).
+              - Ask the Accessibility Team (@gemini_accessibility) to get their advice.
       validations:
-            required: true
+          required: true
     - type: markdown
       attributes:
           value: |
@@ -70,9 +70,9 @@ body:
           id: Types_Usage
           label: 👨🏻‍💻 Types & Usage
           description: |
-                        - Determine the approach for types and state management (e.g., local state, Context API).
-                        - Consider how state changes will be handled and communicated.
-                        - Provide a rudimentary example of how your feature would be used.
+              - Determine the approach for types and state management (e.g., local state, Context API).
+              - Consider how state changes will be handled and communicated.
+              - Provide a rudimentary example of how your feature would be used.
       validations:
           required: true
     - type: textarea
@@ -82,13 +82,13 @@ body:
           description: Add all questions, open decisions or inquiries that need an answer or clarification from other contributors.
     - type: textarea
       attributes:
-          id: Related_Links 
+          id: Related_Links
           label: 🔗 Related Links
           description: |
-                        add all relevant links such:
-                         - Figma design
-                         - [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
-                         - Research links
-                         - Related Pull Requests
+              add all relevant links such:
+               - Figma design
+               - [Gemini Decision Record](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)
+               - Research links
+               - Related Pull Requests
       validations:
-        required: true
+          required: true
