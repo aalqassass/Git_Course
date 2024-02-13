@@ -32,7 +32,7 @@ body:
     - type: textarea
       id: Additional_Notes
       attributes:
-          label: "### ✏️ Additional Notes (Optional)"
+          label: "<h3> ✏️ Additional Notes (Optional)</h3>"
           description: All notes that help other contributors understand the reasons for adding, deleting, or changing a specific feature should be mentioned (like [Gemini Decision Records](https://avivgroup.atlassian.net/wiki/spaces/ADS/pages/533909731/GDR+Gemini+Decision+Records)).
     - type: textarea
       id: Requirements
